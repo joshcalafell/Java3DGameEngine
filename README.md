@@ -43,35 +43,35 @@ JAR and Natives Configuration
 Folder Structure
 ----------------
 <pre>
-.
 ├── build.gradle
 ├── libs
 │   ├── jar
-│   │   └── lwjgl.jar
-|.. |.. └── lwjgl_util.jar
-|.. |.. └── jinput.jar
-|.. |.. └── slick.jartree
-|.. |.. └── slick-util.jar
+│   │   ├── jinput.jar
+│   │   ├── lwjgl.jar
+│   │   ├── lwjgl_util.jar
+│   │   ├── slick.jar
+│   │   └── slick-util.jar
 │   └── native
 │       ├── freebsd
 │       ├── linux
 │       ├── macosx
 │       ├── solaris
 │       └── windows
-├── LICENSE
+├── LICENCE
 ├── README.md
 ├── res
 │   ├── shaders
-|.. |.. └── phongFragment.fs
-|   │   └── phongVertex.vs
-│   ├── textures
-|.. |.. └── rock1.png
-|.. |.. └── moss.png
-├── src
-│   └── main
-│       └── java
-
-13 directories, 12 files
+│   │   ├── phongFragment.fs
+│   │   └── phongVertex.vs
+│   └── textures
+│       ├── moss.png
+│       ├── rock1.png
+│       └── rock.png
+└── src
+    └── main
+        └── java
+        
+12 directories, 13 files
 
 </pre>
 
