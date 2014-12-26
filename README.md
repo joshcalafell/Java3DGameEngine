@@ -17,7 +17,7 @@ Navigation
 
 Abstract
 -------
-Java3DGameEngine is a fully functional game engine with a few items thrown in and movement enabled so that you can "fly" around a scene I have created. Variations on an old tutorial series by @BennyQBD, modified to use Gradle as a build  and deployment tool, and to load libraries using a custom library loader class I wrote. 
+Java3DGameEngine is a fully functional game engine with a few items thrown in. Movement is enabled so that you can "fly" around a scene I have created. This projext is a variation on an old tutorial series by @BennyQBD, modified to use Gradle as a build/deployment tool, and to load libraries using a custom library loader class I wrote. 
 
 Screenshot
 ----------
@@ -26,7 +26,7 @@ Screenshot
 
 Configuration
 ==============================
-This program requires jars from LWJGL and Slick2D as well as natives for Windows, Linux, and OSX in the lwjgl vers 2.9.1 ZIP file and Slick2D ZIP file, so these must be downloaded per the instructions below. For the Gradle build, these files must be obtained and put into the correct folders in the project structure or you will be an unhappy camper, and the program will fail. So the following steps are necessary:
+This program requires jars and natives for Windows, Linux, OSX, FreeBSD, and Solaris in the lwjgl vers 2.9.1 ZIP file and several jars from the Slick2D ZIP file, so these must be downloaded per the instructions below. For the Gradle build, these files must be obtained and put into the correct folders in the project structure or you will be an unhappy camper, and the program will fail. So the following steps are necessary:
 
 JAR and Natives Configuration
 -----------------------------
