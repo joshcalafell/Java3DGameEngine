@@ -35,7 +35,7 @@ JAR and Natives Configuration
 <li>Obtain the Slick2D zip file from: http://slick.ninjacave.com/ and extract the files somewhere.</li>
 <li>Create a folder in the main directory of the project called <code>libs/</code></li>
 <li>Create a subfolder in the <code>libs/</code> folder called <code>jar/</code></li>
-<li>Move the native folder from wherever you extracted the lwjgl.zip folder, and then move the whole folder into the <code>libs/</code> folder in the project.</li>
+<li>Move the <code>native</code> folder from wherever you extracted the lwjgl.zip folder, and then move the whole folder into the <code>libs/</code> folder in the project.</li>
 <li>Copy <code>lwjgl.jar, lwjgl_util.jar, jinput.jar</code> from the extracted files and move it into the <code>libs/jar/</code> folder in the project.</li>
 <li>Copy <code>slick.jar</code> and <code>slick-util.jar</code> from the extracted files and move it into the libs/jar/</code> folder in the project.</li>
 </ol>
@@ -71,7 +71,7 @@ Folder Structure
 │   └── main
 │       └── java
 
-13 directories, 14 files
+13 directories, 12 files
 
 </pre>
 
