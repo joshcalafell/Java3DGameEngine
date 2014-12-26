@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile files('libs/jar/lwjgl.jar', 
+		  'libs/jar/lwjgl_util.jar',
+		  'libs/jar/jinput.jar',
+                  'libs/jar/slick.jar',
+		  'libs/jar/slick-util.jar')
+    runtime files('libs/natives')
+}
+
+jar {
+    from configurations.compile.collect { zipTree it }
+    manifest.attributes 'Main-Class': 'main.java.net.rabbitfighter.engine.MainComponent' 
+}
+
+task runJar(type: JavaExec, dependsOn: jar) {
+    main 'main.java.net.rabbitfighter.engine.MainComponent'
+    classpath = runtimeClasspath
+}
