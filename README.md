@@ -71,7 +71,7 @@ Folder Structure
 │   └── main
 │       └── java
 
-13 directories, 14 files
+13 directories, 12 files
 
 </pre>
 
