@@ -21,7 +21,24 @@ public class LibraryLoader {
 			addLibraryPath("libs/native/macosx");
 		} else if (System.getProperty("os.name").equals("Linux")) {
 			addLibraryPath("libs/native/linux");
-		} else if (System.getProperty("os.name").equals("Windows")) {
+			
+		} 
+		else if (System.getProperty("os.name").equals("FreeBSD")) {
+			addLibraryPath("libs/native/freebsd");
+			
+		}
+		else if (System.getProperty("os.name").equals("Solaris")) {
+			addLibraryPath("libs/native/solaris");
+			
+			if (System.getProperty("os.arch").equals("amd64")
+					|| System.getProperty("os.arch").equals("x86_64")) {
+				System.loadLibrary("libopenal64.so");
+			
+			} else {
+				System.loadLibrary("libopenal.so");
+			}
+			
+		}else if (System.getProperty("os.name").equals("Windows")) {
 			addLibraryPath("libs/native/windows");
 
 			if (System.getProperty("os.arch").equals("amd64")
