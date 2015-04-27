@@ -152,48 +152,39 @@ public class Input
 			lastMouse[i] = getMouse(i);
 	}
 	
-	public static boolean getKey(int keyCode)
-	{
+	public static boolean getKey(int keyCode) {
 		return Keyboard.isKeyDown(keyCode);
 	}
-	
-	public static boolean getKeyDown(int keyCode)
-	{
+
+	public static boolean getKeyDown(int keyCode) {
 		return getKey(keyCode) && !lastKeys[keyCode];
 	}
-	
-	public static boolean getKeyUp(int keyCode)
-	{
+
+	public static boolean getKeyUp(int keyCode) {
 		return !getKey(keyCode) && lastKeys[keyCode];
 	}
-	
-	public static boolean getMouse(int mouseButton)
-	{
+
+	public static boolean getMouse(int mouseButton) {
 		return Mouse.isButtonDown(mouseButton);
 	}
-	
-	public static boolean getMouseDown(int mouseButton)
-	{
+
+	public static boolean getMouseDown(int mouseButton) {
 		return getMouse(mouseButton) && !lastMouse[mouseButton];
 	}
-	
-	public static boolean getMouseUp(int mouseButton)
-	{
+
+	public static boolean getMouseUp(int mouseButton) {
 		return !getMouse(mouseButton) && lastMouse[mouseButton];
 	}
-	
-	public static Vector2f getMousePosition()
-	{
+
+	public static Vector2f getMousePosition() {
 		return new Vector2f(Mouse.getX(), Mouse.getY());
 	}
-	
-	public static void setMousePosition(Vector2f pos)
-	{
-		Mouse.setCursorPosition((int)pos.getX(), (int)pos.getY());
+
+	public static void setMousePosition(Vector2f pos) {
+		Mouse.setCursorPosition((int) pos.getX(), (int) pos.getY());
 	}
-	
-	public static void setCursor(boolean enabled)
-	{
+
+	public static void setCursor(boolean enabled) {
 		Mouse.setGrabbed(!enabled);
 	}
 }

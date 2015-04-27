@@ -8,11 +8,14 @@ repositories {
 }
 
 dependencies {
-    compile files('libs/jar/lwjgl.jar', 
-		  'libs/jar/lwjgl_util.jar',
-		  'libs/jar/jinput.jar',
-                  'libs/jar/slick.jar',
-		  'libs/jar/slick-util.jar')
+    compile files(
+        'libs/jar/lwjgl.jar', 
+		'libs/jar/lwjgl_util.jar',
+		'libs/jar/jinput.jar',
+        'libs/jar/slick.jar',
+		'libs/jar/slick-util.jar'
+    )
+    
     runtime files('libs/natives')
 }
 
